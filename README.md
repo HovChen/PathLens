@@ -1,4 +1,4 @@
-- # PathLens: A Lightweight Multimodal Reasoner for In-Depth Pathology Insights
+# PathLens: A Lightweight Multimodal Reasoner for In-Depth Pathology Insights
 
   **PathLens** is a lightweight multimodal pathological reasoner designed to deliver interpretable and efficient diagnostic reasoning. Built on HealthGPT, it avoids costly pre-training by leveraging **Patho-CoT** (a multi-agent pipeline for synthesizing Chain-of-Thought data) and **ReAL** (Reasoning Alignment Learning). Despite having only 3B parameters, PathLens achieves competitive performance against larger general-purpose models.
 
