@@ -1,0 +1,11 @@
+accelerate==1.9.0
+deepspeed==0.15.0
+einops==0.8.1
+httpx==0.28.1
+numpy==1.26.4
+peft==0.16.0
+sentencepiece==0.2.0
+timm==1.0.22
+torch==2.6.0+cu124
+torchvision==0.21.0+cu124
+transformers==4.57.1
