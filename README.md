@@ -37,22 +37,22 @@
   **Using Shell Script:** Edit scripts/infer.sh to point to your model paths, then run:
 
   ```bash
-  bash scripts/infer.sh
+bash scripts/infer.sh
   ```
 
   **Using Python Command:**
 
   ```bash
-  CUDA_VISIBLE_DEVICES=0,1,2,3 python3 scripts/infer.py \
-      --model_name_or_path "microsoft/Phi-3-mini-4k-instruct" \
-      --vit_path "openai/clip-vit-large-patch14-336" \
-      --hlora_path "path/to/hlora_weights" \
-      --vocab_proj_path "path/to/vocab_proj_weights" \
-      --img_path "examples/demo.png" \
-      --question "What is the condition of the interstitial in the image?" \
-      --hlora_r 64 \
-      --hlora_alpha 128 \
-      --infer
+CUDA_VISIBLE_DEVICES=0,1,2,3 python3 scripts/infer.py \
+    --model_name_or_path "microsoft/Phi-3-mini-4k-instruct" \
+    --vit_path "openai/clip-vit-large-patch14-336" \
+    --hlora_path "path/to/hlora_weights" \
+    --vocab_proj_path "path/to/vocab_proj_weights" \
+    --img_path "examples/demo.png" \
+    --question "What is the condition of the interstitial in the image?" \
+    --hlora_r 64 \
+    --hlora_alpha 128 \
+    --infer
   ```
 
   **Arguments:**
@@ -67,12 +67,12 @@
 
   PathLens demonstrates superior performance across multiple benchmarks compared to models of similar (and often larger) size.
 
-  | **Model**       | **PathVQA (Acc)** | **PathMMU-Val (Acc)** | **PedPathVQA (Acc)** |
-  | --------------- | ----------------- | --------------------- | -------------------- |
-  | **PathLens-3B** | **53.2**          | **61.3**              | **56.9**             |
-  | Patho-R1-3B     | 41.9              | 58.4                  | 53.36                |
-  | HealthGPT-M3    | 51.7              | 49.4                  | 41.90                |
-  | Qwen2.5-VL-7B   | 44.1              | 38.4                  | 53.75                |
+| **Model**       | **PathVQA (Acc)** | **PathMMU-Val (Acc)** | **PedPathVQA (Acc)** |
+| --------------- | ----------------- | --------------------- | -------------------- |
+| **PathLens-3B** | **53.2**          | **61.3**              | **56.9**             |
+| Patho-R1-3B     | 41.9              | 58.4                  | 53.36                |
+| HealthGPT-M3    | 51.7              | 49.4                  | 41.90                |
+| Qwen2.5-VL-7B   | 44.1              | 38.4                  | 53.75                |
 
   *See [Table 1], [Table 2], [Table 3], and [Table 4] in the paper for full comparisons.*
 
@@ -88,14 +88,23 @@
 
   This project is licensed under the [Apache License 2.0](https://www.google.com/search?q=./LICENSE).
 
-  ## 🖊️ Citation
+  ## 🤝 Acknowledgment
 
-  If you use PathLens in your research, please cite our paper:
+  Our project is developed based on the following repositories:
 
-  ```tex
-  @article{zhu2026pathlens,
-    title={PathLens: A Lightweight Multimodal Reasoner for In-Depth Pathology Insights},
-    author={Zhu, Zhu and Chen, Huangwei and Yan, Zhenyu and Zhang, Donghao and Wu, Yueyi and Zhan, Yuqi and Cheng, Weihao and Zhao, Manli and Gu, Weizhong and Chen, Yifei and Qin, Feiwei and Yu, Gang},
-    year={2026}
-  }
-  ```
+- [LLaVA](https://github.com/haotian-liu/LLaVA): Large Language and Vision Assistant
+- [LLaVA++](https://github.com/mbzuai-oryx/LLaVA-pp): Extending Visual Capabilities with LLaMA-3 and Phi-3
+- [HealthGPT](https://github.com/DCDmllm/HealthGPT): A Medical Large Vision-Language Model for Unifying Comprehension and Generation via Heterogeneous Knowledge Adaptation
+
+## 🖊️ Citation
+
+If you use PathLens in your research, please cite our paper:
+
+```tex
+@article{zhu2026pathlens,
+  title={PathLens: A Lightweight Multimodal Reasoner for In-Depth Pathology Insights},
+  author={Zhu, Zhu and Chen, Huangwei and Yan, Zhenyu and Zhang, Donghao and Wu, Yueyi and Zhan, Yuqi and Cheng, Weihao and Zhao, Manli and Gu, Weizhong and Chen, Yifei and Qin, Feiwei and Yu, Gang},
+  year={2026}
+}
+```
+
