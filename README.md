@@ -69,10 +69,10 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python3 scripts/infer.py \
 
 | **Model**       | **PathVQA (Acc)** | **PathMMU-Val (Acc)** | **PedPathVQA (Acc)** |
 | --------------- | ----------------- | --------------------- | -------------------- |
-| **PathLens-3B** | **53.2**          | **61.3**              | **56.9**             |
-| Patho-R1-3B     | 41.9              | 58.4                  | 53.36                |
-| HealthGPT-M3    | 51.7              | 49.4                  | 41.90                |
-| Qwen2.5-VL-7B   | 44.1              | 38.4                  | 53.75                |
+| **PathLens-3B** | **53.2**          | **61.3**              | **60.07**             |
+| Patho-R1-3B     | 41.9              | 58.4                  | 54.16                |
+| HealthGPT-M3    | 51.7              | 49.4                  | 45.10                |
+| Qwen2.5-VL-7B   | 44.1              | 38.4                  | 50.83                |
 
   *See [Table 1], [Table 2], [Table 3], and [Table 4] in the paper for full comparisons.*
 
@@ -102,9 +102,14 @@ If you use PathLens in your research, please cite our paper:
 
 ```tex
 @article{zhu2026pathlens,
-  title={PathLens: A Lightweight Multimodal Reasoner for In-Depth Pathology Insights},
-  author={Zhu, Zhu and Chen, Huangwei and Yan, Zhenyu and Zhang, Donghao and Wu, Yueyi and Zhan, Yuqi and Cheng, Weihao and Zhao, Manli and Gu, Weizhong and Chen, Yifei and Qin, Feiwei and Yu, Gang},
-  year={2026}
+title = {PathLens: A lightweight multimodal reasoner for in-depth pathology insights},
+journal = {Knowledge-Based Systems},
+pages = {116261},
+year = {2026},
+issn = {0950-7051},
+doi = {https://doi.org/10.1016/j.knosys.2026.116261},
+url = {https://www.sciencedirect.com/science/article/pii/S0950705126009871},
+author = {Zhu Zhu and Huangwei Chen and Zhenyu Yan and Donghao Zhang and Yueyi Wu and Yuqi Zhan and Weihao Cheng and Manli Zhao and Weizhong Gu and Yifei Chen and Feiwei Qin and Gang Yu},
 }
 ```
 
